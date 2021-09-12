@@ -138,6 +138,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const newFeature = function () {
+  console.log('System test');
+};
+
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
@@ -145,6 +149,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView._addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Welcome to the cafe');
+  newFeature();
 };
 init();
